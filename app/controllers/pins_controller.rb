@@ -25,9 +25,10 @@ end
 def edit
 end
 def destroy
-	@pin.destroy
-	redirect_to root_path
-end
+		@pin.destroy
+		redirect_to root_path
+	end
+
 def update
      if @pin.update(pin_params)
      	redirect_to @pin, notice: "Pin was successfully updaed"
